@@ -57,8 +57,7 @@ module.exports = {
                     img: songInfo.artwork_url,
                     ago: songInfo.last_modified,
                     views: String(songInfo.playback_count).padStart(10, " "),
-                    duration: Math.ceil(songInfo.duration / 1000),
-                    req: message.author,
+                    duration: Math.ceil(songInfo.duration / 1000)  
                 };
             } catch (error) {
                 console.error(error);
